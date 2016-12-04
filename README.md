@@ -6,8 +6,7 @@ A finance website to buy and sell stocks with real-time market prices
 * [DONE]Add forgot password feature
 
 ## MVC Design
-==============
-
+---------------
 **public:**	Controller Scripts in PHP  
-**views:**	Views in HTML
+**views:**	Views in HTML  
 **include:**	Helper Scripts
