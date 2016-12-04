@@ -62,6 +62,12 @@
             apologize("Transcation failed. Please contact admin.");
         }
         
+        
+        // Update history
+        $buyTime = date('d/m/y, g:i:s A');
+        $historyUpdate = CS50::query("INSERT INTO history (user_id, symbol, shares, transaction, price, date)
+                                        VALUES (?, ?, ?, ?, ?, ?)", $user_id, $stockToBuy, $sharesToBuy, 'BUY', $stockPrice, $buyTime);
+                                        
         // redirect to portfolio
         redirect("/");
     }
